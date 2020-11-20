@@ -50,6 +50,8 @@ ENDPOINTS
 
 
 - http://127.0.0.1:8000/api/upvotes/<int:pk> :
+	> Send a `GET` request to get a particular post from the database
+	
 	> Send a ‘PATCH’ request to increase a particular post’s amount_of_upvotes field by 1
 
 
