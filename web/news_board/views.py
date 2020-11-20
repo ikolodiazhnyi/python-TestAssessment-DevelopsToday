@@ -18,6 +18,11 @@ class CommentViewSet(viewsets.ModelViewSet):
 
 
 class Upvotes(APIView):
+    def get(self, request, pk):
+        post = get_object_or_404(Post, id=pk)
+        serializer = PostSerializer(post)
+        return Response({"posts": serializer.data})
+
     def patch(self, request, pk):
         model = get_object_or_404(Post, id=pk)
         data = {"amount_of_upvotes": model.amount_of_upvotes + 1}
