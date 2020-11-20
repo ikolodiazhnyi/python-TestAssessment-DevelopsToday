@@ -23,7 +23,7 @@ ENDPOINTS
 
 - http://127.0.0.1:8000/api/posts/<int:pk>/ :
     > Send a `GET` request to get a particular post from the database
-	> Send a ‘PUT’ request to update a particular post
+    > Send a ‘PUT’ request to update a particular post
 	> Send a ‘PATCH’ request to update a particular field in the certain post
 	> Send a ‘DELETE’ request to delete a particular post
 
